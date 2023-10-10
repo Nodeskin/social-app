@@ -10,27 +10,27 @@ export default function Share() {
           <input placeholder="Whats's on your mind" className="shareInput" />
         </div>
         <hr className="shareHr" />
+
         <div className="shareBottom">
-          
         <div className="shareOptions">
           <div className="shareOption">
             <PermMedia htmlColor="tomato" className="shareIcon"/>
-            <span className="shareOptiontext">Photos/Videos</span>
+            <span className="shareOptionText">Photos/Videos</span>
           </div>
           <div className="shareOption">
             <Label htmlColor="blue"  className="shareIcon"/>
-            <span className="shareOptiontext">Tag</span>
+            <span className="shareOptionText">Tag</span>
           </div>
           <div className="shareOption">
             <Room htmlColor="green" className="shareIcon"/>
-            <span className="shareOptiontext">Location</span>
+            <span className="shareOptionText">Location</span>
           </div>
           <div className="shareOption">
             <EmojiEmotions htmlColor="goldenrod" className="shareIcon"/>
-            <span className="shareOptiontext">Feelings</span>
+            <span className="shareOptionText">Feelings</span>
           </div>
         </div>
-        <button className="sharebutton">Share</button>
+        <button className="shareButton">Share</button>
         </div>
       </div>
     </div>
