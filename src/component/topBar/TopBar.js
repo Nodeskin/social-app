@@ -5,13 +5,13 @@ export default function TopBar() {
   return (
     <div>
       <div className="topBarContainer">
-        <div className="topbarLeft">
-          <span className="logo">Nodesocial</span>
+        <div className="topBarLeft">
+          <span className="logo">nodeConnect</span>
         </div>
 
-        <div className="topbarCenter">
+        <div className="topBarCenter">
           <div className="searchBar">
-            <FaSearch />
+            <FaSearch className="searchIcon" />
             <input
               placeholder="Search for friends, post or video"
               className="searchInput"
@@ -27,15 +27,15 @@ export default function TopBar() {
 
           <div className="topBarIcons">
             <div className="topBarIconItem">
-              <FaUser />
+              <FaUser className="topIcon" />
               <span className="topBarIconBadge">1 </span>
             </div>
             <div className="topBarIconItem">
-              <FaComment />
+              <FaComment className="topIcon" />
               <span className="topBarIconBadge">2</span>
             </div>
             <div className="topBarIconItem">
-              <FaBell />
+              <FaBell className="topIcon" />
               <span className="topBarIconBadge">3</span>
             </div>
           </div>
