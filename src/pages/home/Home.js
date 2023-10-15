@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <TopBar />
-      <div class="homeContainer">
+      <div className="homeContainer">
         <SideBar />
         <Feeds />
         <RightBar />
