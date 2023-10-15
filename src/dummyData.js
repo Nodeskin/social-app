@@ -89,6 +89,7 @@ export const Posts = [
     },
     {
         id: 5,
+        desc: "The more responsible you become, the easier your life becomes... nodeSkin",
         photo: "assets/post/p5.jpg",
         date: "20 mins ago",
         userId: 5,
@@ -97,6 +98,7 @@ export const Posts = [
     },
     {
         id: 6,
+        desc: "Always let the Wolf inside you reflect through your sheep clothing.. nodeSkin",
         photo: "assets/post/p1.jpg",
         date: "10 mins ago",
         userId: 6,
