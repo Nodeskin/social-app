@@ -1,5 +1,7 @@
 import "./sideBar.css"
 import { RssFeed, HelpOutline, WorkOutline, Event, School, Bookmark, Group, PlayCircleFilledOutlined, Chat } from "@mui/icons-material";
+import {Users} from "../../dummyData"
+import CloseFriend from "../closeFriend/CloseFriend";
 
 export default function SideBar() {
   return (
@@ -52,34 +54,9 @@ export default function SideBar() {
         <button className="sideBarButton">Show More</button>
         <hr className="sideBarHr" />
         <ul className="sideBarFriendList">
-            <li className="sideBarFriend">
-                <img src="/assets/persons/img9.png" alt="" className="sideBarFriendImg" />
-                <span className="sideBarFriendName">Akere Adetola</span>
-            </li>
-            <li className="sideBarFriend">
-                <img src="/assets/persons/img9.png" alt="" className="sideBarFriendImg" />
-                <span className="sideBarFriendName">Akere Adetola</span>
-            </li>
-            <li className="sideBarFriend">
-                <img src="/assets/persons/img9.png" alt="" className="sideBarFriendImg" />
-                <span className="sideBarFriendName">Akere Adetola</span>
-            </li>
-            <li className="sideBarFriend">
-                <img src="/assets/persons/img9.png" alt="" className="sideBarFriendImg" />
-                <span className="sideBarFriendName">Akere Adetola</span>
-            </li>
-            <li className="sideBarFriend">
-                <img src="/assets/persons/img9.png" alt="" className="sideBarFriendImg" />
-                <span className="sideBarFriendName">Akere Adetola</span>
-            </li>
-            <li className="sideBarFriend">
-                <img src="/assets/persons/img9.png" alt="" className="sideBarFriendImg" />
-                <span className="sideBarFriendName">Akere Adetola</span>
-            </li>
-            <li className="sideBarFriend">
-                <img src="/assets/persons/img9.png" alt="" className="sideBarFriendImg" />
-                <span className="sideBarFriendName">Akere Adetola</span>
-            </li>
+        {Users.map(u=>(
+            <CloseFriend key={u.id} user={u} />
+        ))}
         </ul>
      </div>
     </div>

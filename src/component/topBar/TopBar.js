@@ -3,7 +3,7 @@ import { FaSearch, FaUser, FaComment, FaBell } from "react-icons/fa";
 
 export default function TopBar() {
   return (
-    <div>
+    <>
       <div className="topBarContainer">
         <div className="topBarLeft">
           <span className="logo">nodeConnect</span>
@@ -28,11 +28,11 @@ export default function TopBar() {
           <div className="topBarIcons">
             <div className="topBarIconItem">
               <FaUser className="topIcon" />
-              <span className="topBarIconBadge">1 </span>
+              <span className="topBarIconBadge"> 1</span>
             </div>
             <div className="topBarIconItem">
               <FaComment className="topIcon" />
-              <span className="topBarIconBadge">2</span>
+              <span className="topBarIconBadge"> 2</span>
             </div>
             <div className="topBarIconItem">
               <FaBell className="topIcon" />
@@ -42,6 +42,6 @@ export default function TopBar() {
           <img src="/assets/persons/img1.jpg" alt="" className="topBarImg" />
         </div>
       </div>
-    </div>
+    </>
   );
 }
