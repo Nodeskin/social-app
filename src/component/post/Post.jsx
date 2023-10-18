@@ -1,9 +1,19 @@
 import "./post.css"
 import {MoreVert  } from "@mui/icons-material";
 import {Users} from "../../dummyData"
+import { useState } from "react";
 
 
 export default function Post({post}) {
+  const [like, setLike] = useState(post.like)
+  const [isLiked, setIsLiked] = useState(false)
+
+
+  const likeHandler = ()=>{
+    setLike(isLiked ? like-1 : like+1)
+    setIsLiked(!isLiked)
+  }
+
   //Testing the filter working process...
 //   console.log(post)
 //  const user = Users.filter(user => user.id === post.userId)
@@ -15,7 +25,7 @@ export default function Post({post}) {
         <div className="postWrapper">
             <div className="postTop">
                 <div className="postTopLeft">
-                    <img className="postProfileImg" src="/assets/persons/img9.png" alt=""  />
+                    <img className="postProfileImg" src={Users.filter((user) => user.id === post.userId)[0].profilePicture } alt=""  />
                     <span className="postUsername">{Users.filter((user) => user.id === post.userId)[0].username }</span>
                     <span className="postDate"> {post.date}</span>
                 </div>
@@ -29,9 +39,9 @@ export default function Post({post}) {
             </div>
             <div className="postBottom">
               <div className="postBottomLeft">
-                <img className="likeIcon" src="/assets/like.png" alt="" />
+                <img className="likeIcon" src="/assets/like.png" onClick={likeHandler} alt="" />
                 <img className="likeIcon" src="/assets/heart.png" alt="" />
-                <span className="postLikeCounter"> {post.like} people like it</span>
+                <span className="postLikeCounter"> {like} people like it</span>
               </div>
               <div className="postBottomRight">
                 <span className="postText">{post.comment} comments</span>

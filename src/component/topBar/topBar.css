@@ -6,6 +6,7 @@
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .topBarLeft {
@@ -75,20 +76,20 @@
 .topBarIconsItem {
   margin-right: 15px;
   cursor: pointer;
-  position: relative;
+  position: absolute;
 }
 
 .topBarIconBadge {
-  width: 15px;
+  width: 30px;
   height: 15px;
   background-color: red;
   border-radius: 50px;
-  font-size: 12px;
+  font-size: 15px;
   text-align: center;
-  color: #fff;
-  position: absolute;
-  top: -3px;
-  /* right: 6px; */
+  color: #ffff;
+  position: relative;
+  top: -12px;
+  left: -1px;
 }
 
 .topBarImg {
