@@ -42,12 +42,12 @@ export const Users = [
   {
     id: 9,
     profilePicture: "assets/persons/img9.png",
-    username: "Lawal Fano",
+    username: "Badmus Aliu",
   },
   {
     id: 10,
     profilePicture: "assets/persons/img10.jpg",
-    username: "Lawal Fano",
+    username: "Isa Aminat",
   },
 ];
 // console.log(Users.filter((user) => user.id === 2)[0]);
