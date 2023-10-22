@@ -41,6 +41,26 @@ export default function RightBar({profile}) {
           <span className="rightBarInfoValue">Single</span>
         </div>
       </div>
+      <h4 className="rightBarTitle">User friends</h4>
+      <div className="rightBarFollowings">
+      <div className="rightBarFollowing">
+        <img className="rightBarFollowingImg" src="assets/post/p6.jpg" alt="" />
+        <span className="rightBarFollowingName">Rere Abu</span>
+        </div>
+      <div className="rightBarFollowing">
+        <img className="rightBarFollowingImg" src="assets/post/p5.jpg" alt="" />
+        <span className="rightBarFollowingName">Jason Derullo</span>
+        </div>
+      <div className="rightBarFollowing">
+        <img className="rightBarFollowingImg" src="assets/post/p4.jpg" alt="" />
+        <span className="rightBarFollowingName">Abab Hompson</span>
+        </div>
+      <div className="rightBarFollowing">
+        <img className="rightBarFollowingImg" src="assets/post/p3.jpg" alt="" />
+        <span className="rightBarFollowingName">Shalimat Obeda</span>
+        </div>
+
+      </div>
       </>
     )
   }
