@@ -49,7 +49,8 @@
   border-radius: 10px;
   border: 1px solid gray;
   font-size: 18px;
-  padding-left: 20px;
+  padding-left: 15px;
+  margin-bottom: 10px;
 }
 
 .loginInput:focus {
@@ -65,11 +66,13 @@
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .loginForgot {
   text-align: center;
   color: #1775ee;
+  margin-bottom: 15px;
 }
 
 .loginRegisterButton {
